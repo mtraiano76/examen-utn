@@ -80,29 +80,30 @@ function sacar(){
 
 /*EJ* CANCION------------------------------------------------------------------------------------------------------------------------------------------*/
 
-let cancion=["mi","barba","tiene","tres","pelos"]
-let frase = "";
+
+let cancion = ["mi" , "barba" , "tiene" , "tres" , "pelos"];
+
+let frase=""
+
 let parrafo = document.getElementById("parrafoejercicio4");
-let inputejercicio = document.getElementById("inputejercicio4");
-parrafo.innerHTML = cancion
-document.getElementById("boton__ejercicio4").addEventListener("click",listenejercicio);
-
-function listenejercicio () {
-    event.preventDefault()
-    for (let i = 0; i<cancion.length; i++){
-
-        console.log(cancion[i]);
-        console.log(inputejercicio.value);
-        if (cancion[i] == inputejercicio.value) {
-            cancion.slice(i,1,"");
+parrafo.innerHTML = cancion 
+let inputejercicio=document.getElementById("inputejercicio4");
+document.getElementById("botonejercicio4").addEventListener("click",listenejercicio);
  
-        }
+function listenejercicio () {
+    parrafo.innerHTML=""
+  event.preventDefault()
 
-        frase=frase +" " + cancion[i]
-        parrafo.innerHTML = frase
-        console.log(frase);
+   for (let i = 0; i< cancion.length; i++) {
+       console.log(cancion[i])
+       console.log(inputejercicio.value)
+      if (cancion[i] == inputejercicio.value) {
+
+          cancion.splice(i,1,"");
     }
+    //frase=frase + " " + cancion[i]
+    parrafo.innerHTML+=cancion[i] + " "
 
+   }
 }
-
 
