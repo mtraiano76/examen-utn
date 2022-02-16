@@ -1,5 +1,5 @@
 
-    let diccionario=[{
+   /* let diccionario=[{
         palabra:"peregrino",
         definicion:"Persona Que anda o viaja por tierras extrañas que presentan dificultades.",
         },
@@ -47,8 +47,32 @@ function ingresarPalabra (){
             texto.innerHTML = 'Lo sentimos, nuestro diccionario no dispone de esta esta definición por el momento'
             break;
     }
+}*/
+
+
+
+
+/*EJ CARRITO*/
+
+let valorCirculo = document.getElementById("idCirculo");
+let contador = 0;
+let span = document.getElementById("idSpan");
+let spanNumber = parseInt(span.textContent);
+let total = document.getElementById("idTotal");
+let valTot = 0;
+
+
+function agregar() {
+
+    valorCirculo.innerHTML = ++contador;
+    valTot =  parseInt(valTot ) + spanNumber
+    total.innerHTML =  "total: " + valTot;
 }
+function sacar(){ 
+    if (contador > 1 || contador == 1 ) {
+        valorCirculo.innerHTML = --contador;
+        valTot =  parseInt(valTot ) - spanNumber
+        total.innerHTML = "total: " + valTot; 
+    }
 
-
-
-
+}
