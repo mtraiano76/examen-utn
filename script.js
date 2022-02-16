@@ -7,11 +7,11 @@
         },
         {
         palabra:"berenjena",
-        definicion:"planta de fruto comestible, generalmente anual, del género Solanum dentro de la familia de las solanáceas",
+        definicion:"Planta de fruto comestible, generalmente anual, del género Solanum dentro de la familia de las solanáceas",
         },
         {
         palabra:"bucle",
-        definicion:"secuencia de instrucciones de código que se ejecuta repetidas veces.//Curva en formade rizo que se forma en determinadas cosas.",
+        definicion:"Secuencia de instrucciones de código que se ejecuta repetidas veces.//Curva en formade rizo que se forma en determinadas cosas.",
         },
         {
         palabra:"estetoscopio",
@@ -81,6 +81,28 @@ function sacar(){
 /*EJ* CANCION------------------------------------------------------------------------------------------------------------------------------------------*/
 
 let cancion=["mi","barba","tiene","tres","pelos"]
-cancion.splice()
+let frase = "";
+let parrafo = document.getElementById("parrafoejercicio4");
+let inputejercicio = document.getElementById("inputejercicio4");
+parrafo.innerHTML = cancion
+document.getElementById("boton__ejercicio4").addEventListener("click",listenejercicio);
+
+function listenejercicio () {
+    event.preventDefault()
+    for (let i = 0; i<cancion.length; i++){
+
+        console.log(cancion[i]);
+        console.log(inputejercicio.value);
+        if (cancion[i] == inputejercicio.value) {
+            cancion.slice(i,1,"");
+ 
+        }
+
+        frase=frase +" " + cancion[i]
+        parrafo.innerHTML = frase
+        console.log(frase);
+    }
+
+}
 
 
