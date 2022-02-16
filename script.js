@@ -1,5 +1,7 @@
 
-   /* let diccionario=[{
+   /*EJ DICCIONARIO------------------------------------------------------------------------------------------------------------------------------*/
+   
+   let diccionario=[{
         palabra:"peregrino",
         definicion:"Persona Que anda o viaja por tierras extrañas que presentan dificultades.",
         },
@@ -40,19 +42,18 @@ function ingresarPalabra (){
         case diccionario [3].palabra:
             texto.innerHTML = diccionario[3].definicion;
             break;
-        case diccionario [3].palabra:
-            texto.innerHTML = diccionario[3].definicion;
+        case diccionario [4].palabra:
+            texto.innerHTML = diccionario[4].definicion;
             break;
         default:
             texto.innerHTML = 'Lo sentimos, nuestro diccionario no dispone de esta esta definición por el momento'
             break;
     }
-}*/
+}
 
 
 
-
-/*EJ CARRITO*/
+/*EJ CARRITO------------------------------------------------------------------------------------------------------------------------------------------*/
 
 let valorCirculo = document.getElementById("idCirculo");
 let contador = 0;
@@ -66,13 +67,20 @@ function agregar() {
 
     valorCirculo.innerHTML = ++contador;
     valTot =  parseInt(valTot ) + spanNumber
-    total.innerHTML =  "total: " + valTot;
+    total.innerHTML =  "TOTAL: $" + valTot;
 }
 function sacar(){ 
     if (contador > 1 || contador == 1 ) {
         valorCirculo.innerHTML = --contador;
         valTot =  parseInt(valTot ) - spanNumber
-        total.innerHTML = "total: " + valTot; 
+        total.innerHTML = "TOTAL: $" + valTot; 
     }
 
 }
+
+/*EJ* CANCION------------------------------------------------------------------------------------------------------------------------------------------*/
+
+let cancion=["mi","barba","tiene","tres","pelos"]
+cancion.splice()
+
+
