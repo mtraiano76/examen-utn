@@ -1,5 +1,5 @@
 
-   /*EJ DICCIONARIO------------------------------------------------------------------------------------------------------------------------------*/
+   /*EJ 1 DICCIONARIO------------------------------------------------------------------------------------------------------------------------------*/
    
    let diccionario=[{
         palabra:"peregrino",
@@ -53,7 +53,7 @@ function ingresarPalabra (){
 
 
 
-/*EJ CARRITO------------------------------------------------------------------------------------------------------------------------------------------*/
+/*EJ 2 CARRITO------------------------------------------------------------------------------------------------------------------------------------------*/
 
 let valorCirculo = document.getElementById("idCirculo");
 let contador = 0;
@@ -78,7 +78,44 @@ function sacar(){
 
 }
 
-/*EJ* CANCION------------------------------------------------------------------------------------------------------------------------------------------*/
+/*EJ 3-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*ESTE ESTA COMENTADO PORQUE SINO CUANDO VOY AL HTML ME PIDE CONTRASEñA*/
+
+    /*let usuarioAdministrador = 'Cosme Fulanito';
+    let password ='Admin123';
+    let productos=[{
+    nombre:'remera',
+    precio:2500,
+    stock:40
+    },{
+    nombre:'buzo',
+    precio:5750,
+    stock:32
+    }]
+
+
+let usuario=prompt("Si es administrador, ingrese su usuario: ");
+if (usuario===usuarioAdministrador){
+    let pasword=prompt('Ingrese su contraseña');
+    if(pasword===pasword){
+
+    }else{
+        console.log("La contraseña ingresada es incorrecta");
+    }
+    }else{
+        console.log("El usuaio ingresado es correcto");
+    }
+
+    productos.push({
+        nombreDelProducto:prompt("Ingrese el producto"),
+        precio:parseInt(prompt("Ingrese el precio")),
+        stock:parseInt(prompt("Ingrese el stock"))
+    })*/
+
+
+
+/*EJ 4 CANCION------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 let cancion = ["mi" , "barba" , "tiene" , "tres" , "pelos"];
@@ -106,4 +143,5 @@ function listenejercicio () {
 
    }
 }
+
 
