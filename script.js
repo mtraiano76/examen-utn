@@ -126,7 +126,7 @@ let parrafo = document.getElementById("parrafoejercicio4");
 parrafo.innerHTML = cancion 
 let inputejercicio=document.getElementById("inputejercicio4");
 document.getElementById("botonejercicio4").addEventListener("click",listenejercicio);
- 
+
 function listenejercicio () {
     parrafo.innerHTML=""
   event.preventDefault()
@@ -143,5 +143,12 @@ function listenejercicio () {
 
    }
 }
+ /*EJ 5 MURCIELAGO------------------------------------------------------------------------------------------------------------------------------------*/
+ let noche = document.querySelector('.noche')
+ let tema = document.querySelector('.tema')
+ let fotoMur = document.querySelector('.fotoMur')
 
-
+ noche.addEventListener('mousemove', e =>{
+   tema.classList.toggle('darkmode')
+   fotoMur.classList.toggle('fotoMur2')
+   })

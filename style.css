@@ -94,3 +94,16 @@ img{
     display: flex;
     gap: 40px;
 }
+
+.fotoMur{
+    width: 0%;
+}
+
+div.darkmode{
+    background-color: rgb(53,0,175);
+    color: white;
+}
+
+.fotoMur2{
+    width: 100%;
+}
